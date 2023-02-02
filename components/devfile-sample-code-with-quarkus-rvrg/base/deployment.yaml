@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-code-with-quarkus-rvrg
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:beaumorley-tenant-devfile-sample-code-with-quarkus-rvrg
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c49787b4618b4c7da427bc86ee99bc1a20d42e32e1329c3fe85cc4d83fdc49f1
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
