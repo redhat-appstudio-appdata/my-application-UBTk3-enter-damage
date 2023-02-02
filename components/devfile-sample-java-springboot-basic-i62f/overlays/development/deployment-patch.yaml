@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-i62f
+  namespace: beaumorley-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:345d778487e9dc738071341dc6bcb536114aeba5dee03ab02bee022ce5a4c7a8
+        name: container-image
+        resources: {}
+status: {}
