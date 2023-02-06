@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-code-with-quarkus-vmcy
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:beaumorley-tenant-devfile-sample-code-with-quarkus-vmcy
+      - image: quay.io/redhat-appstudio/user-workload@sha256:64dae131b44962ea6f75cab7024dee36378368ccde24657df9f7980f1d175864
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
