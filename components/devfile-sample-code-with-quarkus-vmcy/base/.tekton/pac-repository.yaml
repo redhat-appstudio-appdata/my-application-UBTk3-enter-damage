@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: my-application
+    appstudio.openshift.io/component: devfile-sample-code-with-quarkus-vmcy
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-vmcy
+  namespace: beaumorley-tenant
+spec:
+  url: https://github.com/sbose78/devfile-sample-code-with-quarkus
